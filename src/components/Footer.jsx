@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import React from 'react';
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Facebook, Instagram, MapPin, Phone, Mail, Clock } from 'lucide-react'; // Twitter removed
 
 const Footer = () => {
   return (
@@ -30,15 +30,18 @@ const Footer = () => {
             </div>
             {/* Social Icons - moved upward with negative margin */}
             <div className="flex space-x-4 -mt-2">
-              <a href="#" className="p-2 rounded-full border border-gray-400 hover:border-blue-500 transition">
+              <button
+                className="p-2 rounded-full border border-gray-400 hover:border-blue-500 transition"
+                aria-label="Facebook"
+              >
                 <Facebook size={18} className="text-gray-700" />
-              </a>
-              <a href="#" className="p-2 rounded-full border border-gray-400 hover:border-blue-500 transition">
+              </button>
+              <button
+                className="p-2 rounded-full border border-gray-400 hover:border-blue-500 transition"
+                aria-label="Instagram"
+              >
                 <Instagram size={18} className="text-gray-700" />
-              </a>
-              <a href="#" className="p-2 rounded-full border border-gray-400 hover:border-blue-500 transition">
-                <Twitter size={18} className="text-gray-700" />
-              </a>
+              </button>
             </div>
           </div>
 
@@ -103,8 +106,9 @@ const Footer = () => {
       {/* Solid light green band at the bottom - taller for better visibility */}
       <div className="bg-[#8BC34A] text-white py-8 mt-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-base font-medium">&copy; {new Date().getFullYear()} Prathamesh Dairy & Foods. All rights reserved. Crafted with ❤️ in Belgaum | Freshness since 1992.</p>
-          
+          <p className="text-base font-medium">
+            &copy; {new Date().getFullYear()} Prathamesh Dairy & Foods. All rights reserved. Crafted with ❤️ in Belgaum | Freshness since 1992.
+          </p>
         </div>
       </div>
     </footer>

@@ -28,8 +28,8 @@ const Navbar = ({ scrollToHome, scrollToProducts, scrollToAbout, scrollToProcess
       }
     };
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, [scrollToHome, scrollToProducts, scrollToAbout, scrollToProcess, scrollToContact]);
 
   const navItems = [
     { id: 'home', label: 'Home', action: scrollToHome },

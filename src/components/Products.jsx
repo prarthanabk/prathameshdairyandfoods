@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingCart, Star } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react'; // ✅ Add this import
 
 const products = [
   {
@@ -40,7 +40,6 @@ const products = [
     image: '/images/pfd5.jpeg',
     badge: 'Traditional',
   },
-  
   {
     name: 'Butter',
     description: 'Creamy table butter',
@@ -48,7 +47,6 @@ const products = [
     image: '/images/pfd6.jpeg',
     badge: 'Unsalted',
   }
- 
 ];
 
 const Products = ({ openOrderModal }) => {
