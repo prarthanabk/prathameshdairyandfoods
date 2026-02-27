@@ -1,15 +1,8 @@
-// src/components/Contact.jsx
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact = () => {
-  // URL-encoded address for the map embed
-  const address = encodeURIComponent(
-    'Narayan Galli, Kangrali KH, Belgaum, Karnataka 590010'
-  );
-
   // Using Google Maps embed with q parameter (no API key required for basic embed)
-  // Note: For production, consider getting a free API key to avoid limitations
   const mapSrc = "https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1958804.8075634118!2d74.3430031!3d16.4861354!3m2!1i1024!2i768!4f13.1!2m1!1sNarayan%20Galli%20Kangrali%20KH%20Belgaum%20Karnataka%20590010!5e0!3m2!1sen!2sin!4v1772101250140!5m2!1sen!2sin";
 
   return (
