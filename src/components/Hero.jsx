@@ -4,53 +4,63 @@ const Hero = ({ openOrderModal }) => {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-r from-blue-600 to-blue-400 text-white overflow-hidden"
+      className="relative bg-[#eef5e6] overflow-hidden"
     >
-      {/* Background image container with fixed height */}
-      <div className="absolute inset-0 z-0">
+
+      {/* DESKTOP LOGO (RIGHT SIDE) */}
+      <div className="hidden md:flex absolute right-0 top-0 h-full w-1/2 items-center justify-center pointer-events-none">
         <img
-          src="/images/hero2.1.jpg"
-          alt="Dairy farm"
-          className="w-full h-full object-cover object-center opacity-80"
-          onError={(e) => (e.target.style.display = 'none')}
+          src="/images/pfdlogo1.png"
+          alt="logo"
+          className="w-[500px] lg:w-[700px] opacity-20 object-contain"
         />
       </div>
 
-      {/* Content container with responsive height */}
-      <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row items-center h-[500px] sm:h-[600px] md:h-[650px] lg:h-[700px]">
-        {/* Left content */}
+      {/* CONTENT */}
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center min-h-[600px]">
+
+        {/* LEFT CONTENT */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Pure Dairy Goodness<br />From Our Farm to Your Home
+          
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-800">
+            Pure Dairy Goodness <br />
+            From Our Farm to Your Home
           </h1>
-          <p className="mt-4 text-xl text-blue-100">
+
+          <p className="mt-4 text-base sm:text-lg text-gray-600">
             Fresh, pasteurised milk and pure ghee, crafted with care since 1992.
           </p>
+
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               onClick={() => openOrderModal()}
-              className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition shadow-lg"
+              className="bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-700 transition shadow-lg"
             >
               Shop Now
             </button>
+
             <button
-              onClick={() => document.getElementById('process').scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition"
+              onClick={() =>
+                document
+                  .getElementById('process')
+                  .scrollIntoView({ behavior: 'smooth' })
+              }
+              className="border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-600 hover:text-white transition"
             >
               Our Process
             </button>
           </div>
         </div>
 
-        {/* Right image (milk bottle) */}
-        <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+        {/* MOBILE LOGO (BELOW CONTENT) */}
+        <div className="md:hidden mt-10 flex justify-center">
           <img
-            src="/images/hero-milk.png"
-            alt="Fresh milk"
-            className="max-h-96 drop-shadow-2xl"
-            onError={(e) => (e.target.src = 'https://via.placeholder.com/400x400?text=Prathamesh+Milk')}
+            src="/images/pfdlogo1.png"
+            alt="logo"
+            className="w-[280px] opacity-30 object-contain"
           />
         </div>
+
       </div>
     </section>
   );

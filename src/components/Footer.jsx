@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import React from 'react';
-import { Facebook, Instagram, MapPin, Phone, Mail, Clock } from 'lucide-react'; // Twitter removed
-
+import { Instagram, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="relative text-gray-800 pt-20 overflow-hidden">
@@ -30,12 +30,15 @@ const Footer = () => {
             </div>
             {/* Social Icons - moved upward with negative margin */}
             <div className="flex space-x-4 -mt-2">
-              <button
-                className="p-2 rounded-full border border-gray-400 hover:border-blue-500 transition"
-                aria-label="Facebook"
-              >
-                <Facebook size={18} className="text-gray-700" />
-              </button>
+              <a
+  href="https://wa.me/918277700089"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="p-2 rounded-full border border-gray-400 hover:border-green-500 transition"
+  aria-label="WhatsApp"
+>
+  <FaWhatsapp size={18} className="text-green-600" />
+</a>
               <button
                 className="p-2 rounded-full border border-gray-400 hover:border-blue-500 transition"
                 aria-label="Instagram"
@@ -67,7 +70,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="flex-shrink-0 text-blue-600 drop-shadow-md" />
-                <span className="drop-shadow-md">8277700089</span>
+                <span className="drop-shadow-md">+91 8277700089</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="flex-shrink-0 text-blue-600 drop-shadow-md" />
@@ -75,7 +78,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Clock size={18} className="flex-shrink-0 text-blue-600 drop-shadow-md" />
-                <span className="drop-shadow-md">Mon-Sat: 8am - 8pm</span>
+                <span className="drop-shadow-md">Open all 7 days • 7:00 AM – 10:00 PM</span>
               </li>
             </ul>
           </div>

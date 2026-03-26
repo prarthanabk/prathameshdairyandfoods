@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail} from 'lucide-react';
 
 const Contact = () => {
   // Using Google Maps embed with q parameter (no API key required for basic embed)
@@ -48,8 +48,8 @@ const Contact = () => {
               <Phone className="text-blue-600" size={28} />
               <h3 className="font-semibold text-lg">Phone</h3>
             </div>
-            <p className="text-gray-600">8277700089</p>
-            <p className="text-sm text-gray-500 mt-1">Mon-Sat, 8am - 8pm</p>
+            <p className="text-gray-600">+91 8277700089</p>
+            <p className="text-sm text-gray-500 mt-1">Open all 7 days • 7:00 AM – 10:00 PM</p>
           </div>
 
           {/* Email Card */}
@@ -63,10 +63,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Optional: Add a small note about timing */}
-        <div className="text-center mt-8 text-gray-500 text-sm">
-          <Clock className="inline mr-1" size={16} /> Open Monday–Saturday, 8am–8pm
-        </div>
+      
       </div>
     </section>
   );
