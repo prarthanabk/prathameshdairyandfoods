@@ -21,7 +21,7 @@ const About = () => {
             </div>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Story</h2>
             <p className="text-gray-600 mb-4 text-lg leading-relaxed">
-              At Prathamesh Milk Dairy, we believe in freshness, purity, and trust—values that have guided our family for over 35 years. What started as a humble milk collection business has grown into a modern, ethically-run dairy delivering premium quality milk and dairy products every day.
+              At Prathamesh Dairy & Foods, we believe in freshness, purity, and trust—values that have guided our family for over 35 years. What started as a humble milk collection business has grown into a modern, ethically-run dairy delivering premium quality milk and dairy products every day.
             </p>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
               Our farm is a model of ethical animal care and sustainable dairy practices. Every cow and buffalo is raised with compassion, clean surroundings, and nutritious feed, ensuring that every drop of milk is rich, wholesome, and naturally fresh.
@@ -33,7 +33,7 @@ reaches hotels, hospitals, and homes with the same quality and care that we
 uphold on our farm.
             </p>
              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-            At Prathamesh Milk Dairy, we combine traditional values with modern
+            At Prathamesh Dairy & Foods, we combine traditional values with modern
 hygiene standards, ethical practices, and scientific methods to provide dairy
 that is not only fresh but safe, healthy, and delicious.
             </p>
